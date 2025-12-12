@@ -23,6 +23,7 @@
 
 function scramble(str, arr) {
   let result = [];
+
   for (let i = 0; i < str.length; i++) {
     result[arr[i]] = str[i];
   }
@@ -31,5 +32,6 @@ function scramble(str, arr) {
 
 /**
   NOTE:
-    This one was very challenging. Did not like this
+    This one was very challenging. At first I wanted to use two different variables to store the value at each index and reassign them that way.
+    I realized that I don't have to mutate the original array and could just create a new one. This made setting up the index position much easier.
 **/
